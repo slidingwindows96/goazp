@@ -1,0 +1,26 @@
+student
+{
+	display: block;
+	margin-top: 10px;
+}
+usn
+{
+	display: block;
+	margin-left: 2px;
+	font-size: 30pt;
+	color: blue;
+}
+name
+{
+	display: block;
+	margin-left: 2px;
+	font-size: 30pt;
+	color: yellow;
+}
+email
+{
+	display: block;
+	margin-left: 2px;
+	font-size: 30pt;
+	color: red;
+}

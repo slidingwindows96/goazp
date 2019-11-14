@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+</head>
+<body>
+<script>
+var c=0, t1;
+t1=setInterval("incr()",100);
+function incr()
+{
+	c=c+1;
+	t.innerHTML="TEXT GROWING: "+c+"pt";
+	t.style.fontSize=c+"pt";
+	window.status=c;
+	if(c>50)
+	{
+		window.clearTimeout(t1);
+		alert("Text reached 50 pt. Now it will shrink");
+		t1=setInterval("decr()",100);
+	}
+}
+function decr()
+{
+	c=c-1;
+	t.innerHTML="TEXT SHRINKING: "+c+"pt";
+	t.style.fontSize=c+"pt";
+	t.style.color="red";
+	window.status=c;
+	if(c==5)
+	{
+		window.clearTimeout(t1);
+	}
+}
+</script>
+<p style="text-align:center;" id="t"></p>
+</body>
+</html>		

@@ -1,0 +1,26 @@
+<?xml-stylesheet type="text/css" href="5.css" ?>
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1>Student details</h1>
+<students>
+	<student>
+	<h2>First</h2>
+	<usn>usn: 1PE16IS077</usn>
+	<name>name: Pranjal</name>
+	<email>email: dcsds</email>
+	</student>
+
+	<student>
+	<h2>Second</h2>
+	<usn>usn: 1PE16IS078</usn>
+	<name>name: PranjalYO</name>
+	<email>email: dcsHGHGds</email>
+	</student>
+</students>
+</body>
+</html>
+	
+	

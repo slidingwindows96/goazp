@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="refresh" content="1"/>
+</head>
+<body>
+<h1 style="font-size:30pt; text-align:center;">Time</h1>
+<p style="background-color:black; color:white; font-size:50pt;">
+<?php
+echo date("h:i:s");
+?>
+</p>
+</body>
+</html>
+

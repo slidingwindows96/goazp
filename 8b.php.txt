@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<?php
+if(isset($_POST["sub"]))
+{
+	$txt1=$_POST["num1"];
+	$txt2=$_POST["num2"];
+	$op=$_POST["sub"];
+	if($op=="+")
+	{
+		$res=$txt1+$txt2;
+	}
+	else if($op=="-")
+	{
+		$res=$txt1-$txt2;
+	}
+	else if($op=="*")
+	{
+		$res=$txt1*$txt2;
+	}
+	else
+	{
+		$res=$txt1/$txt2;
+	}
+}
+?>
+<form method="post" action="8b.php">
+<h1>Calculator</h1>
+No1:<input type="number" name="num1" value="<?php echo $txt1;?>"/>
+No2:<input type="number" name="num2" value="<?php echo $txt2;?>"/>
+
+<input type="submit" name="sub" value="+"/>
+<input type="submit" name="sub" value="-"/>
+<input type="submit" name="sub" value="*"/>
+<input type="submit" name="sub" value="/"/>
+
+Result:<input type="number" name="res" value="<?php echo $res;?>"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<title>Reverse and Vowel</title>
+</head>
+<body>
+<script>
+{
+var str=prompt("Enter a string ");
+if(isNaN(str))
+{
+	str=str.toUpperCase();
+	for(var i=0; i<str.length; i++)
+	{
+		var chr=str.charAt(i);
+		if(chr=='A' || chr=='E' || chr=='I' || chr=='O' || chr=='U')
+		{
+			break;
+		}
+	}
+	if(i<str.length)
+	{
+		alert("Position of leftmost vowel is: "+(i+1));
+	}
+}
+else
+{
+	var num=parseInt(str);
+	var rev=0, rem;
+	while(num!=0)
+	{
+		rem=num%10;
+		num=parseInt(num/10);
+		rev=rev*10+rem;
+	}
+	alert("Reverse of " + str+"is " + rev);
+}
+}
+</script>
+</body>
+</html>

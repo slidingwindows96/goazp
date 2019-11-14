@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 <php\par
+$states="Texas Kansas Moas",\par
+$statesarray=[];\par
+$states1=explode(' ',$states);\par
+echo ("Actual array is: <br>");\par
+foreach($states1 as $i => $value)\{\par
+print("STATES[$i]=$value");\par
+\}\par
+foreach($states1 as $state)\{\par
+if(preg_match('/xas$/',$state))\par
+\{\par
+$statesarray[0]=$state;\par
+\}\par
+if(preg_match('/^K.*s/',$state))\par
+\{\par
+$statesarray[1]=$state;\par
+\}\par
+if(preg_match('/^M.*s/',$state))\par
+\{\par
+$statesarray[2]=$state;\par
+\}\par
+\}\par
+echo("New array: <br>");\par
+foreach($statesarray as $i => $value)\{\par
+print("STATES[$i]=$value");\par
+\}\par
+?>\par
+}
+ 
